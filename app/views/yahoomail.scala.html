@@ -1,0 +1,17 @@
+@(yahooMails: List[YahooMail])
+
+@main("scoopr") {
+
+    <table>
+    @for(yahooMail <- yahooMails) {
+        
+        <tr>
+            <td>Y!</td>
+            <td>@yahooMail.from</td>
+            <td>@yahooMail.subject</td>
+            <td>@yahooMail.date</td>
+        </tr>
+                   
+    }
+    </table>
+}
